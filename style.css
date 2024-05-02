@@ -1,0 +1,159 @@
+/* fonts */
+
+@font-face {
+    font-family: Notable;
+    src: url("./fonts/Notable/Notable-Regular.ttf");
+}
+
+/* code */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+}
+
+.container {
+    margin: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #87a680;
+}
+
+.header {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.links a {
+    padding: 25px;
+    color: #F7E9DE;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.links a:hover {
+    transition: 0.7s;
+    color: #dbcfc6;
+}
+
+.cover {
+    flex-basis: 90%;
+}
+
+.cover-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.cover .cover-content h1 {
+    font-family: Notable;
+    font-size: 75px;
+    color: #F7E9DE;
+    letter-spacing: 5px;
+}
+
+.cover-content img {
+    position: absolute;
+}
+
+#photo1 {
+    width: 150px;
+    top: 25%;
+    left: 20%;
+}
+
+
+#photo2 {
+    width: 120px;
+    top: 63%;
+    left: 18%;
+}
+
+#photo3 {
+    width: 150px;
+    top: 57%;
+    left: 71%;
+}
+
+.cover-content a {
+    color: #87a680;
+    text-decoration: none;
+    background-color: #F7E9DE;
+    padding: 15px 30px;
+    border: 2px solid #87a680;
+}
+
+.cover-content a:hover {
+    transition: 1s;
+    background-color: #87a680;
+    color: #F7E9DE;
+    border: 2px solid #F7E9DE;
+    box-shadow: 6px 25px 13px rgba(255, 255, 255, 0.04), 3px 32px 20px rgba(255, 255, 255, 0.13), 2px 14px 14px rgba(255, 255, 255, 0.21), 0px 4px 8px rgba(255, 255, 255, 0.25), 0px 0px 0px rgba(255, 255, 255, 0.25);
+
+}
+
+
+@media only screen and (max-width:770px) {
+    .cover .cover-content h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .header .links a {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .cover .cover-content h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #photo1 {
+        width: 80px;
+        left: 10%;
+    }
+
+    #photo2 {
+        width: 80px;
+        left: 20%;
+    }
+
+    #photo3 {
+        width: 100px;
+        left: 68%;
+        top: 60%;
+    }
+}
