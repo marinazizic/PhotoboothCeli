@@ -86,14 +86,14 @@ body {
     position: absolute;
 }
 
-#photo4 {
+#photo1 {
     position: absolute;
     width: 280px;
     top: 48.5%;
     left: 0%;
 }
 
-#photo5 {
+#photo2 {
     position: absolute;
     width: 300px;
     top: -12%;
@@ -138,7 +138,7 @@ body {
     padding: 25px;
 }
 
-#photo7 {
+#photo4 {
     position: absolute;
     width: 280px;
     left: 81.5%;
@@ -162,14 +162,14 @@ body {
     text-align: center;
 }
 
-#photo81 {
+#photo51 {
     position: absolute;
     width: 100%;
     z-index: 1;
     top: 90%;
 }
 
-#photo82 {
+#photo52 {
     position: absolute;
     width: 100%;
     z-index: 1;
@@ -230,16 +230,16 @@ canvas#defaultCanvas0.p5Canvas {
 }
 
 @media only screen and (max-width:1440px) {
-    #photo4 {
+    #photo1 {
         top: 62.5%;
         left: 0%;
     }
 
-    #photo5 {
+    #photo2 {
         left: 70%;
     }
 
-    #photo7 {
+    #photo4 {
         width: 300px;
         top: 69%;
         rotate: 0deg;
@@ -248,30 +248,30 @@ canvas#defaultCanvas0.p5Canvas {
     }
 
 
-    #photo81 {
+    #photo51 {
         top: 92%;
     }
 }
 
 @media only screen and (max-width:1024px) {
-    #photo4 {
+    #photo1 {
         top: 56.5%;
     }
 
-    #photo5 {
+    #photo2 {
         position: absolute;
         width: 300px;
         top: -12%;
         left: 70.5%;
     }
 
-    #photo7 {
+    #photo4 {
         top: 64%;
         left: 70.5%;
     }
 
 
-    #photo81 {
+    #photo51 {
         top: 93%;
     }
 }
@@ -282,14 +282,14 @@ canvas#defaultCanvas0.p5Canvas {
         text-align: center;
     }
 
-    #photo4 {
+    #photo1 {
         position: absolute;
         width: 180px;
         top: 62.7%;
         left: 3%;
     }
 
-    #photo5 {
+    #photo2 {
         position: absolute;
         width: 200px;
         top: -12%;
@@ -304,7 +304,7 @@ canvas#defaultCanvas0.p5Canvas {
         font-size: 14px;
     }
 
-    #photo7 {
+    #photo4 {
         width: 200px;
         top: 68%;
         rotate: 0deg;
@@ -313,7 +313,7 @@ canvas#defaultCanvas0.p5Canvas {
     }
 
 
-    #photo81 {
+    #photo51 {
         top: 95%;
     }
 }
@@ -333,14 +333,14 @@ canvas#defaultCanvas0.p5Canvas {
         text-align: center;
     }
 
-    #photo4 {
+    #photo1 {
         position: absolute;
         width: 160px;
         top: 68.7%;
         left: 3%;
     }
 
-    #photo5 {
+    #photo2 {
         position: absolute;
         width: 190px;
         rotate: 90deg;
@@ -356,7 +356,7 @@ canvas#defaultCanvas0.p5Canvas {
         font-size: 14px;
     }
 
-    #photo7 {
+    #photo4 {
         display: none;
     }
 
@@ -365,7 +365,7 @@ canvas#defaultCanvas0.p5Canvas {
         margin: 0;
     }
 
-    #photo81 {
+    #photo51 {
         top: 98%;
     }
 
@@ -375,14 +375,14 @@ canvas#defaultCanvas0.p5Canvas {
 }
 
 @media only screen and (max-width:380px) {
-    #photo4 {
+    #photo1 {
         position: absolute;
         width: 150px;
         top: 68.7%;
         left: 0%;
     }
 
-    #photo5 {
+    #photo2 {
         position: absolute;
         width: 170px;
         rotate: 90deg;
@@ -396,14 +396,14 @@ canvas#defaultCanvas0.p5Canvas {
         display: none;
     }
 
-    #photo4 {
+    #photo1 {
         position: absolute;
         width: 150px;
         top: 68.7%;
         left: 0%;
     }
 
-    #photo5 {
+    #photo2 {
         position: absolute;
         width: 170px;
         rotate: 90deg;
