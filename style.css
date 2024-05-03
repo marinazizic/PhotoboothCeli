@@ -6,13 +6,14 @@
 }
 
 /* code */
-*{
+* {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px auto;
+    background-color: #F7E9DE;
 }
 
 .container {
@@ -85,25 +86,6 @@ body {
     position: absolute;
 }
 
-/* #photo1 {
-    width: 150px;
-    top: 25%;
-    left: 20%;
-}
-
-
-#photo2 {
-    width: 120px;
-    top: 63%;
-    left: 18%;
-}
-
-#photo3 {
-    width: 150px;
-    top: 57%;
-    left: 71%;
-} */
-
 #photo4 {
     position: absolute;
     width: 280px;
@@ -172,7 +154,7 @@ body {
     justify-self: center;
 }
 
-.quote h1{
+.quote h1 {
     font-family: Notable;
     color: #F7E9DE;
     margin: 50px;
@@ -194,8 +176,57 @@ body {
     rotate: 180deg;
 }
 
-.recognition{
-    height: 112vh;
+.recognition {
+    height: 15vh;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas#defaultCanvas0.p5Canvas {
+    width: 100%;
+}
+
+.buttons {
+    margin-top: 100px;
+}
+
+#bg1,
+#bg2,
+#bg3,
+#bg4,
+#bg5,
+#bg6 {
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 0px solid transparent;
+}
+
+#bg1 {
+    background: url(./backgrounds/bg-1.jpg);
+}
+
+#bg2 {
+    background: url(./backgrounds/bg-2.jpg);
+}
+
+#bg3 {
+    background: url(./backgrounds/bg-3.jpg);
+}
+
+#bg4 {
+    background: url(./backgrounds/bg-4.jpg);
+}
+
+#bg5 {
+    background: url(./backgrounds/bg-5.jpg);
+}
+
+#bg6 {
+    background: url(./backgrounds/bg-6.jpg);
 }
 
 @media only screen and (max-width:1440px) {
@@ -204,16 +235,20 @@ body {
         left: 0%;
     }
 
+    #photo5 {
+        left: 70%;
+    }
+
     #photo7 {
         width: 300px;
         top: 69%;
         rotate: 0deg;
         z-index: 0;
-        left: 79%;
+        left: 76%;
     }
 
-    
-    #photo81{
+
+    #photo81 {
         top: 92%;
     }
 }
@@ -235,8 +270,8 @@ body {
         left: 70.5%;
     }
 
-    
-    #photo81{
+
+    #photo81 {
         top: 93%;
     }
 }
@@ -277,8 +312,8 @@ body {
         left: 74%;
     }
 
-    
-    #photo81{
+
+    #photo81 {
         top: 95%;
     }
 }
@@ -325,13 +360,17 @@ body {
         display: none;
     }
 
-    .quote h1{
+    .quote h1 {
         font-size: 25px;
         margin: 0;
     }
-    
-    #photo81{
+
+    #photo81 {
         top: 98%;
+    }
+
+    .recognition {
+        margin-bottom: 220px;
     }
 }
 

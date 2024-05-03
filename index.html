@@ -59,10 +59,90 @@
             <h1>"U zivotu, kao i u fotobudici, sve je stvar perspektive. Promijenite pozadinu i promijenit ćete cijelu
                 pricu!" </h1>
         </div>
-        <div class="recognition">
+        <div class="recognition" id="reco">
             <img src="./assets/photo8.png" alt="photo8" id="photo82">
+
+            <div class="buttons">
+                <button id="bg1" onclick="change_background('backgrounds/bg-1.jpg')"></button>
+                <button id="bg2" onclick="change_background('backgrounds/bg-2.jpg')"></button>
+                <button id="bg3" onclick="change_background('backgrounds/bg-3.jpg')"></button>
+                <button id="bg4" onclick="change_background('backgrounds/bg-4.jpg')"></button>
+                <button id="bg5" onclick="change_background('backgrounds/bg-5.jpg')"></button>
+                <button id="bg6" onclick="change_background('backgrounds/bg-6.jpg')"></button>
+            </div>
+            <script>
+
+                let model;
+                let video;
+                let backdrop;
+                //modificira sirinu i visinu po ekranu
+                let w = 0;
+                let h = 0;
+                if (window.screen.width < 330) {
+                    w = 320;
+                    h = 480;
+                }
+                else if (window.screen.width < 380) {
+                    w = 375;
+                    h = 480;
+                }
+                else if (window.screen.width < 450) {
+                    w = 425;
+                    h = 480;
+                }
+                else if (window.screen.width < 770) {
+                    w = 768;
+                    h = 480;
+                }
+                else if (window.screen.width < 1030) {
+                    w = 1024;
+                    h = 480;
+                }
+                else {
+                    w = 600;
+                    h = 480;
+                }
+                console.log(window.screen.width);
+
+                const options = {
+                    outputStride: 16, // ima 8, 16, 32 a default je 16
+                    segmentationThreshold: 0.7 // ide 0 - 1, default je 0.5
+                }
+
+                //ucitavanje modela
+                function preload() {
+                    model = ml5.bodyPix(options);
+                }
+
+                //funkcija nakon inicijalnog setupa
+                function setup() {
+                    createCanvas(w, h);
+                    backdrop = loadImage("backgrounds/bg-1.jpg");
+                    // ucitavanje webcama
+                    video = createCapture(VIDEO);
+                    video.size(w, h);
+                    video.hide();
+                    model.segment(video, gotResults);
+                }
+
+                // rezultat segmentacije
+                function gotResults(error, result) {
+                    if (error) {
+                        console.log(error);
+                        return;
+                    }
+                    background(backdrop);
+                    image(result.backgroundMask, 0, 0, w, h);
+                    // proces framea
+                    model.segment(video, gotResults);
+                }
+
+                //  minja pozadinu
+                function change_background(filename) {
+                    backdrop = loadImage(filename);
+                }
+            </script>
         </div>
-        <div class="footer"></div>
     </div>
 </body>
 
