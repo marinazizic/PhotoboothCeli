@@ -10,6 +10,16 @@
     scroll-behavior: smooth;
 }
 
+::-moz-selection {
+    color: #F7E9DE;
+    background: #87a680;
+}
+
+::selection {
+    color: #F7E9DE;
+    background: #87a680;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px auto;
