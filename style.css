@@ -213,15 +213,19 @@ body {
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-canvas#defaultCanvas0.p5Canvas {
-    width: 100%;
+    align-items: flex-start;
 }
 
 .buttons {
     margin-top: 100px;
+}
+
+.buttons h1 {
+    margin-left: 20px;
+    display: inline;
+    font-family: Notable;
+    color: #75906e;
+    font-size: 40px;
 }
 
 #bg1,
@@ -230,35 +234,15 @@ canvas#defaultCanvas0.p5Canvas {
 #bg4,
 #bg5,
 #bg6 {
+    font-family: Notable;
     background-size: contain;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: 0px solid transparent;
-}
-
-#bg1 {
-    background: url(./backgrounds/bg-1.jpg);
-}
-
-#bg2 {
-    background: url(./backgrounds/bg-2.jpg);
-}
-
-#bg3 {
-    background: url(./backgrounds/bg-3.jpg);
-}
-
-#bg4 {
-    background: url(./backgrounds/bg-4.jpg);
-}
-
-#bg5 {
-    background: url(./backgrounds/bg-5.jpg);
-}
-
-#bg6 {
-    background: url(./backgrounds/bg-6.jpg);
+    background-color: #75906e;
+    color: #F7E9DE;
+    font-size: 25px;
 }
 
 @media only screen and (max-width:1440px) {
@@ -344,9 +328,12 @@ canvas#defaultCanvas0.p5Canvas {
         left: 74%;
     }
 
-
     #photo51 {
         top: 95%;
+    }
+
+    .buttons h1{
+        display: none;
     }
 }
 
