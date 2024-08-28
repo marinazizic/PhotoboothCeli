@@ -1,6 +1,6 @@
 # Photobooth Celi
 
-![Cedevita](assets/image.png)
+![Honey](assets/image.png)
 
 Photobooth Celi is a web-based application that uses HTML, CSS, JavaScript, and TensorFlow.js to create an interactive photobooth experience. The application leverages AI to recognize a person in the camera feed and replace the background with a different image. It is designed to be fun and easy to use.
 
